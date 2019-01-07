@@ -8,7 +8,9 @@
       <router-link to="/hi/hi2">Hi页面2</router-link>
     </div>
     <p>{{ $route.name }}</p>
-    <router-view/>
+    <router-view></router-view>
+    <router-view name="left" style="float:left;width: 50%;height:300px;background-color: #ccc"></router-view>
+    <router-view name="right" style="float:left;width: 50%;height:300px;background-color: #c6c"></router-view>
   </div>
 </template>
 

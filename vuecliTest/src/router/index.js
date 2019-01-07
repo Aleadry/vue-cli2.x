@@ -4,6 +4,8 @@ import HelloWorld from '@/components/HelloWorld'
 import Hi from '@/components/Hi'
 import Hi1 from '@/components/Hi1'
 import Hi2 from '@/components/Hi2'
+import Hello2 from '@/components/hello2'
+import Hello1 from '@/components/hello1'
 
 
 Vue.use(Router)
@@ -13,8 +15,21 @@ export default new Router({
     {
       path: '/',
       name: 'HelloWorld',
-      component: HelloWorld
-    },{
+      components: {
+        default:HelloWorld,
+        left:Hello1,
+        right:Hello2
+      }
+    }, {
+      path: '/jspang',
+      name: 'HelloWorld',
+      components: {
+        default: HelloWorld,
+        left: Hello2,
+        right: Hello1
+      }
+    },
+    {
       path: '/Hi',
       component: Hi,
       children:[
