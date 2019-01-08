@@ -5,7 +5,11 @@
       <router-link to="/">首页</router-link> |
       <router-link to="/Hi">Hi页面</router-link> |
       <router-link :to="{name:'hi1',params:{username:'JSPang',id:'888'}}">Hi页面1</router-link> |
-      <router-link to="/hi/hi2">Hi页面2</router-link>
+      <router-link to="/hi/hi2">Hi页面2</router-link> |
+      <router-link to="/params/198/jspang website is very good">params</router-link> |
+      <router-link to="/goHome">goHome</router-link> |
+      <router-link to="/goParams/918/I like vue.js">goParams</router-link>
+
     </div>
     <p>{{ $route.name }}</p>
     <router-view></router-view>
