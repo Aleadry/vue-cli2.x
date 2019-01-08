@@ -30,6 +30,11 @@ export default new Router({
       redirect:'/params/:newsId(\\d+)/:newsTitle'
     },
     {
+      path:'/hi1',
+      component:Hi1,
+      alias:'/jspang'
+    },
+    {
       path: '/Hi',
       component: Hi,
       children:[
